@@ -1,3 +1,9 @@
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1em;
+
 body{
 
     background-image: url(juego-ahorcado2.jpg);
@@ -192,8 +198,4 @@ body{
   a{
     padding: 10px;
   }
-@media screen and (min-width: 1024px) {
-    body {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 1em;
+
