@@ -1,0 +1,194 @@
+body{
+
+    background-image: url(juego-ahorcado2.jpg);
+    background-repeat: no-repeat;
+      background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+  }
+  /*---------------------primera seccion-------------------------------------*/
+  .comienzo{
+    background-color:rgba(58, 58, 58, 0.384);
+    margin-left: 400px;
+    margin-top: 150px;
+    border-radius: 0.5em;
+    width: 600px;
+    
+  }
+  /*juego del ahorcado*/
+  .titulo {
+    padding: 10px;
+    width: 30vw;
+    margin: auto;
+  }
+  /*parrafo de ingresar palabras*/
+  #texto{
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  /*texto antes de ir al juego*/
+  .mensaje{
+    
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  /*botones de ingrso palabra e ir al juego*/
+  .btn {
+    background-color: rosybrown; 
+      color: black; 
+      border: 2px solid #555555;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0.5em;
+  }
+  .btn:hover{
+    background-color: #555555;
+      color: white;
+  }
+  /*ingreso de palabra*/
+  .text-input {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 0.5em;
+    width: 40%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    /*--------------- segunda seccion --------------------------*/
+  
+  /*area juego */
+  #canvas-juego{
+  
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0em;
+  
+  }
+  /* el fonde del canvas*/
+  #dibujo-ahorcado{
+    background-color:#E8DAEF ;
+    width: 90%;
+    height: 100%;
+    
+  }
+  /*contiene la caja del juego*/
+  
+  .guiones-frase{
+    position: absolute;
+    top:2em;
+    padding: 15px;
+  }
+  
+  #tituloJugar{
+    font-size: 45px;
+    color: rgb(189, 108, 108);
+  }
+  
+  /* palabra y guiones*/
+  #frase-Adivinada{
+    
+    font-size: 50px;
+    font-weight: bold;
+    padding: 30px;
+  
+  }
+  
+  #intentos{
+  
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  #tituloEquivocadas {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+  }
+  
+  #letras-erradas{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  
+  .btn2 {
+    background-color: rosybrown; 
+      color: black; 
+      border: 2px solid #555555;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    
+  }
+  .btn2:hover{
+    background-color: #555555;
+      color: white;
+  }
+  
+  /*--------- MENSAJE GANADOR ---------------*/
+  #mge-ganar{
+    background-color: rgba(189, 108, 108, 0.664);
+    
+    position: absolute;
+    color: rgb(36, 151, 32);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+    margin-left: 8px;
+    top: 4em;
+    left: 15em;
+    text-align: right;
+    
+  }
+  
+  #mge-perdio{
+    background-color: rgba(189, 108, 108, 0.664);
+    
+    position: absolute;
+    color:rgb(199, 7, 7);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+    margin-left: 8px;
+    top: 4em;
+    left: 15em;
+    text-align: right;
+    
+  }
+  
+  /*--------------------------------------------------*/
+  #footer{
+    position: fixed;
+    padding: 5px;
+    width: 110%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-align: center;
+    bottom: 0;
+    margin-top: 500px;
+  }
+  #footer a, p{
+    align-items: center;
+    font-size: 25px;
+    color:black;
+    margin-top: auto;
+  }
+  
+  a{
+    padding: 10px;
+  }

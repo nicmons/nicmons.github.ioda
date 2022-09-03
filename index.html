@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="shortcut icon" href="IMG/vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="normalize" href="normalize.css">
+
+    <!--------- LIBRERIA ICONOS REDES SOCIALES --------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+   crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="contenedor">
+      <section class="comienzo">
+<!-------------------- boton de agregar palabra -------------------------------------------->
+        <div class="agregar-palabra" style="text-align:center">
+          <h1 class="titulo" style= "font-size: 40px">Juego del Ahorcado</h1>
+          <p id="texto" style="font-size: 20px;">Antes de comenzar si desea agregue una palabra,
+            <br>de lo contrario presione ir al juego</p>
+          <input class="inputText" type="text" onkeypress="return soloLetras(event);" id="input-nueva-palabra" 
+          placeholder="Escriba aqui una nueva palabra"><br><br>
+          <button class="btn"  id="nueva-palabra">AGREGAR PALABRA</button> 
+        </div>
+
+<!---------------------- boton iniciar juego --------------------------------------------->
+        <div style="text-align:center; margin: 50px 0px;">
+          <p id="texto" class="mensaje" style="font-size: 20px;">Atencion!! 👀 El juego solo funciona con LETRAS</p>
+          <button class="btn"  id="iniciar-juego" value="iniciarJuego">IR AL JUEGO</button>
+        </div>
+
+      </section>
+<!---------------------- dibujo del ahorcado height="360px" width="294px"------------>
+      <section id="canvas-juego" >
+           <!-------------- CANVAS -------------------------->
+                 <!--------------- DIBUJO  ------->
+          <canvas id="dibujo-ahorcado" height="400" width="800"></canvas>
+<!-------------- PALABRA PARA ADIVINAR ---------------->
+        <div class="guiones-frase" style="text-align:center;">
+          
+            <p id="tituloJugar">A Jugar!! 🤗</p>
+            <!-- guiones y frase adivinada -->
+            <div onkeypress="return soloLetras(event);" id="frase-Adivinada" ><br></div>
+            <!-- titulo equivocada-->
+            <div id="tituloEquivocadas"></div>
+            <div id="letras-erradas"></div><!--hidden-->
+            <!-- MUESTRA LETRAS ERRADAS e INTENTOS--> 
+            <div id="intentos"></div>
+            <!---Lleva al inicio para volver a jugar-->
+            <button class="btn2" id="reiniciar" style="float: left" onclick="location.reload()">REINICIAR / ABANDONAR</button>
+            
+        </div>
+      </section>
+<!------------------ MENSAJE GANADOR --------------------------->
+      <div id="mge-ganar"></div>
+      <div id="mge-perdio"></div>
+    
+  </div>
+<!----------------- PIE DE PAGINA ----------------------------------------->
+    <div id="footer">
+          <p>
+              Todos los derechos reservados -NICOLAS MONSALVE GOMEZ-  #AluraLatam 2022
+              <br>
+              <a href="nmonsalve28@misena.edu.com" class="correo">Mail</a>
+              <a href="https://www.instagram.com/gomeznicolasmonsalve/?hl=es"class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/nicmons" class="git"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/nicolas-monsalve-3501a8159/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+              
+          </p>
+    </div>
+<!--------------------------- ARCHIVOS DE JAVASCRIPT ------------------- -->
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <!------- LIBRERIA DE ALERTAS ----------->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+  </body>
+</html>
