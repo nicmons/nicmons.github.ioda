@@ -113,6 +113,15 @@ function comprobarLetra(letraIngresada){
     if(palabraAdivinada.search("_") == -1){
        
         document.getElementById("mge-ganar").innerHTML = "GANASTE!! 🥳 Felicitaciones!";
-        window.removeEventListener("keydown", capturaTeclado);
+        
+function habilitarTeclas(){
+    for(var tecla of listaTeclas){
+        tecla.addEventListener("click",habilitarTeclado);
+    }
+}
+
+function habilitarTeclado(){
+    activarTecladoPantalla(this.textContent);
+ }
     }
 }/// FIN DE LA FUNCION COMPROBAR
