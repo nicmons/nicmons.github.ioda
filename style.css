@@ -44,7 +44,7 @@ body{
 
     background-color: rosybrown; 
       color: black; 
-      border: 2px solid #555555;
+      border: 2px solid #4124a7;
     font-weight: bold;
     padding: 10px;
     margin-top: 5px;
@@ -52,7 +52,7 @@ body{
     border-radius: 0.5em;
   }
   .btn:hover{
-    background-color: #555555;
+    background-color: #4ed016;
       color: white;
   }
   /*ingreso de palabra*/
